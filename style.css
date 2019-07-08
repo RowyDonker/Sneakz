@@ -325,14 +325,13 @@ text-shadow: 2px 2px 8px #000000;
             font-size: 18px;
             font-family: RalewayBold;
         }
-        .products{
-            display:grid;
-            width: 100%;
-            grid-template-columns: auto auto auto;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            justify-items: center;
-        }
+
+       
+        @media screen and (min-width: 1092) {
+            .products{
+                grid-template-columns: auto;
+            }
+          }
         .product{
             background-color:#33404D;
             height: auto;
@@ -689,155 +688,6 @@ text-shadow: 2px 2px 8px #000000;
             font-size: 14px;
             display: inline-block;
         }
+        /* REGISTER */
 
         /* LOGIN */
-        .login{
-            margin: auto auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding-top: 20px;
-            padding-bottom: 30px;
-            padding-left: 30px;
-            padding-right: 30px;
-            background-color: #33404D;
-            width: 60%;
-            height: 340px;
-        }
-        .login h1{
-            color: white;
-            padding-bottom: 10px;
-            font-family: RalewayBold;
-            border-bottom: 1px solid white;
-        }
-        .login form{
-            color: white;
-        }
-        input[type=text], select, textarea {
-            width: 100%;
-            padding-top: 12px;
-            padding-bottom: 12px;
-            border: 1px solid #ccc;
-            resize: vertical;
-          }
-          
-          label {
-            padding: 12px 12px 12px 0;
-            display: inline-block;
-          }
-          
-          input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            cursor: pointer;
-            float: right;
-          }
-          
-          input[type=submit]:hover {
-            background-color: #45a049;
-          }
-          
-          .container {
-            margin: auto auto;
-            padding-top: 40px;
-            width: 80%;
-          }
-          
-          .col-25 {
-            float: left;
-            width: 25%;
-            margin-top: 6px;
-          }
-          
-          .col-75 {
-            float: right;
-            width: 75%;
-            margin-top: 6px;
-          }
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }        
-        .loginbutton{
-            padding-top: 8px;
-            padding-bottom: 8px;
-            background-color: #EB5C74;
-            width: 100%;
-            text-align: center;
-            color:white;
-            border-radius: 5px;
-            box-shadow: 2px 2px #be3d52;
-            cursor: pointer;
-            font-family: 'RalewayBold';
-        }  
-        .sign-up{
-            font-size: 12px;
-            font-family: 'RalewayBold';
-            color: #a8a8a8;
-            cursor: pointer;
-            text-decoration: none;
-        }
-        .forgot{
-            font-size: 12px;
-            color: #a8a8a8;
-            cursor: pointer;
-        }
-        .sign-up:hover{
-            color: #337ab7;
-            font-size: 14px;
-        }
-        .forgot:hover{
-            color: #337ab7;
-            font-size: 14px;
-        }
-        /* Register */
-        .registerhead { grid-area: head; }
-        .registername { grid-area: naam; }
-        .registeremail { grid-area: email; }
-        .registerpassword { grid-area: password; }
-        .registernameinput { grid-area: naaminput; }
-        .registeremailinput { grid-area: emailinput; }
-        .registerpasswordinput { grid-area: passwordinput; }
-        .registerbutton { grid-area: button; }
-        
-        .registercenter{
-            margin: auto auto;
-            width: 70%;
-            padding: 50px;
-        }
-        .register {
-            width: 100%;
-          display: grid;
-          grid-template-areas:
-            'head head head'
-            'naam naaminput naaminput'
-            'email emailinput emailinput'
-            'password passwordinput passwordinput'
-            '.. button button';
-          grid-gap: 10px;
-          background-color: #33404D;
-          padding: 10px;
-        }
-        
-        .register > div {
-          padding: 20px 0;
-          
-        }
-        .registerhead{
-            border-bottom: 1px white solid;
-        }
-        .registername{
-            text-align: right;
-            color: white;
-        }
-        .registeremail{
-            text-align: right;
-            color: white;
-        }
-        .registerpassword{
-            text-align: right;
-            color: white;
-        }
