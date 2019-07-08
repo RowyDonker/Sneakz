@@ -8,7 +8,7 @@ include ('head.php');
 include ('navigation.php');
 ?>
 <div class="producttitle">
-<h2>ONZE ABONNEMENTEN</h2>
+<h2>ABONNEMENTEN</h2>
 <p>Hieronder kunt u lezen over onze abonnementen</p>
 </div>
 <div class="products">

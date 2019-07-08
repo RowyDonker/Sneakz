@@ -1,6 +1,7 @@
+<meta content="width=device-width, initial-scale=1" name="viewport" />
 <div class="navigation">
     <ul>
-        <img src="Images/logo.gif" alt="logo" class="Logo">
+        <!-- <img src="Images/logo.gif" alt="logo" class="Logo"> -->
         <a href="index.php" class="nodecorationbutton"><li>HOME</li></a>
         <a href="product.php" class="nodecorationbutton"><li>BESTELLEN</li></a>
         <div class="icons">
