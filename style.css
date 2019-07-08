@@ -328,13 +328,14 @@ text-shadow: 2px 2px 8px #000000;
             font-size: 18px;
             font-family: RalewayBold;
         }
-
-       
-        @media screen and (min-width: 1092) {
-            .products{
-                grid-template-columns: auto;
-            }
-          }
+        .products{
+            display:grid;
+            width: 100%;
+            grid-template-columns: auto auto auto;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            justify-items: center;
+        }
         .product{
             background-color:#33404D;
             height: auto;
@@ -344,18 +345,38 @@ text-shadow: 2px 2px 8px #000000;
             padding-right: 5px;
             text-align: center
         }
+        @media screen and (max-width: 1092px) {
+            .products {
+                display: block;
+            }
+            .product{
+                width: 80%;
+                margin: auto auto;
+                height: auto;
+                margin-bottom: 20px;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .product{
+                width: 100%;
+                margin: auto auto;
+                height: auto;
+                margin-bottom: 20px;
+                padding-right: unset;
+                padding-left: unset;
+            }
+          }
         .product img{
             height: 310px;
             background-color: white;
             margin: auto auto;
         }
-        @media screen and (min-width: 1092) {
-            .products img{
-               width: auto;
-               height: auto;
-               max-width: 290px;
+        @media screen and (max-width: 480px){
+            .product img{
+                width:80%;
+                height: auto;
             }
-          }
+        }
         .productinfo{
             padding: 20px;
             padding-top: 10px;
@@ -391,6 +412,7 @@ text-shadow: 2px 2px 8px #000000;
             cursor: pointer;
             font-family: 'RalewayBold';
         }
+
         /* Deze maand */
         .thismonthtitle{
             width: 100%;
@@ -400,6 +422,7 @@ text-shadow: 2px 2px 8px #000000;
             padding-top: 20px;
             margin: 0px;
             font-size: 30px;
+            text-align: center;
         }
         .thismonthtitle p{
             color: #a8a8a8;
@@ -407,6 +430,7 @@ text-shadow: 2px 2px 8px #000000;
             margin: 0px;
             font-size: 18px;
             font-family: RalewayBold;
+            text-align: center;
         }
         .shoes{
             display:grid;
@@ -425,10 +449,41 @@ text-shadow: 2px 2px 8px #000000;
             padding-right: 5px;
             text-align: center
         }
+
+        @media screen and (max-width: 1092px) {
+            .shoes {
+                display: block;
+            }
+            .sort{
+                width: 80%;
+                margin: auto auto;
+                height: auto;
+                margin-bottom: 20px;
+                padding-right: unset;
+                padding-left: unset;
+            }
+          }
+          @media screen and (max-width: 480px) {
+            .sort{
+                width: 100%;
+                margin: auto auto;
+                height: auto;
+                margin-bottom: 20px;
+            }
+          }
+
         .sort img{
             height: 310px;
             margin: auto auto;
         }
+
+        @media screen and (max-width: 480px){
+            .sort img{
+                width:80%;
+                height: auto;
+            }
+        }
+
         .shoeinfo{
             padding: 20px;
             padding-top: 10px;
@@ -471,9 +526,10 @@ text-shadow: 2px 2px 8px #000000;
 
     
         /* OFFERS */
-            .offertitle{
+        .offertitle{
             margin: auto auto;
             width: 100%;
+            color: white;
         }
         .offertitle h2{
             font-family: RalewayBold;
@@ -485,196 +541,13 @@ text-shadow: 2px 2px 8px #000000;
         .offertitle p{
             color: #a8a8a8;
             text-align: center;
-            padding: 7px;
             margin: 0px;
             font-size: 18px;
             font-family: RalewayBold;
         }
-        .products{
-            display:grid;
-            width: 100%;
-            grid-template-columns: auto auto auto;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            justify-items: center;
-        }
-        .product{
-            background-color:#33404D;
-            height: auto;
-            width: 350px;
-            padding-top: 20px;
-            padding-left: 10px;
-            padding-right: 5px;
-            text-align: center
-        }
-        @media screen and (max-width: 1092px) {
-            .products {
-                display: block;
-            }
-            .product{
-                width: 80%;
-                margin: auto auto;
-                height: auto;
-                margin-bottom: 20px;
-            }
-          }
-       
-        .product img{
-            height: 310px;
-            background-color: white;
-            margin: auto auto;
-        }
-        .productinfo{
-            padding: 20px;
-            padding-top: 10px;
-        }
-        .productname{
-            font-family: RalewayBold;
-            font-size: 24px;
-            color: white;
-            margin:0px;
-            padding-top: 10px;
-            padding-bottom: 5px;
-        }
-        .productprice{
-            color: white;
-            margin:0px;
-            font-size: 14px;
-        }
-        .producttext{
-            text-align: left;
-            color: white;
-            font-size: 14px;
-            padding-bottom: 20px;
-        }
-        .productbutton{
-            margin: auto auto;
-            padding: 8px;
-            background-color: #EB5C74;
-            width: 80%;
-            text-align: center;
-            color:white;
-            border-radius: 5px;
-            box-shadow: 2px 2px #be3d52;
-            cursor: pointer;
-            font-family: 'RalewayBold';
-        }
-        /* Deze maand */
-        .thismonthtitle{
-            margin: auto auto;
-            width: 50%;
-        }
-        .thismonthtitle h2{
-            font-family: RalewayBold;
-            padding-top: 20px;
-            margin: 0px;
-            font-size: 30px;
-            text-align: center;
-        }
-        .thismonthtitle p{
-            color: #a8a8a8;
-            text-align: center;
-            padding: 7px;
-            margin: 0px;
-            font-size: 18px;
-            font-family: RalewayBold;
-        }
-        .shoes{
-            display:grid;
-            width: 100%;
-            grid-template-columns: auto auto auto;
-            padding-bottom: 20px;
-            padding-top: 20px;
-            justify-items: center;
-        }
-        .sort{
-            background-color:#33404D;
-            height: auto;
-            width: 350px;
-            padding-top: 20px;
-            padding-left: 10px;
-            padding-right: 5px;
-            text-align: center
-        }
-        @media screen and (max-width: 1092px) {
-            .shoes {
-                display: block;
-            }
-            .sort{
-                width: 80%;
-                margin: auto auto;
-                height: auto;
-                margin-bottom: 20px;
-            }
-          }
-        .sort img{
-            height: 310px;
-            margin: auto auto;
-        }
-        .shoeinfo{
-            padding: 20px;
-            padding-top: 10px;
-        }
-        .shoename{
-            font-family: RalewayBold;
-            font-size: 24px;
-            color: white;
-            margin:0px;
-            padding-top: 10px;
-            padding-bottom: 5px;
-        }
-        .shoeprice{
-            color: white;
-            margin:0px;
-            font-size: 14px;
-        }
-        .shoetext{
-            text-align: left;
-            color: white;
-            font-size: 14px;
-            padding-bottom: 20px;
-            margin:0px;
-        }
-        .shoeinfo ul{
-        text-align: left;
-        margin: 0px;
-        padding-left: 20px;
-        padding-right: 20px;
-        color: white;
-        text-decoration: none;
-        cursor: unset;
-        font-size: 14px;
-        }
-        .shoeinfo ul li{
-        margin: 0px;
-        padding: 0px; 
-        color: inherit;
-        }
-
-        /* OFFERS */
         .all-offers{
             background-color: #33404D;
             height: auto;
-        }
-        .offertitle{
-            margin: auto auto;
-            width: 50%;
-        }
-        .offertitle h2{
-            font-family: RalewayBold;
-            padding-top: 20px;
-            margin: 0px;
-            font-size: 30px;
-            text-align: center;
-            color: white;
-        }
-        .offertitle p{
-            color: #a8a8a8;
-            text-align: center;
-            padding: 7px;
-            margin: 0px;
-            font-size: 18px;
-            font-family: RalewayBold;
         }
         .offers{
             display:grid;
@@ -701,12 +574,20 @@ text-shadow: 2px 2px 8px #000000;
                 width: 80%;
                 margin: auto auto;
                 height: auto;
+                margin-bottom: 20px;
             }
           }
+
         .offer img{
-            height: 210px;
+            height: 310px;
             margin: auto auto;
         }
+        @media screen and (max-width: 480px) {
+           .offer img{
+            height: auto;
+            width: 80%;
+        }
+    }
         .offerinfo{
             padding: 20px;
             padding-top: 10px;
