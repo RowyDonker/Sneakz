@@ -11,7 +11,7 @@ include ('navigation.php');
 <h2>ABONNEMENTEN</h2>
 <p>Hieronder kunt u lezen over onze abonnementen</p>
 </div>
-<div class="products">
+    <div class="products">
             <div class="product">
             <img src="Images/box_standaard.png">
                 <div class="productinfo">
@@ -46,42 +46,42 @@ include ('navigation.php');
     <p>Hieronder kan u onze schoenen van deze maand in detail bekijken</p>
 </div>
 <div class="shoes">
-        <div class="sort">
-            <img src="Images/Schoenen/Schoen1(1).png">
-                <div class="shoeinfo">
-                    <p class="shoename">SPORTY</p>
-                    <p class="shoetext">  
-                    Deze maand hebben we nieuwe speciaal ontworpen schoenen voor jou, deze sporty schoen is gemaakt van:</p>
-                    <ul>
-                    <li>Textiel</li>
-                    <li>Comfortabele rubberen loopzool</li>
-                    <li>Energie teruggevende boost</li>
-            </div>
-</div>
-<div class="sort">
-            <img src="Images/Schoenen/Schoen2(1).jpg">
-                <div class="shoeinfo">
-                    <p class="shoename">CASUAL</p>
-                    <p class="shoetext">  
-                    Deze maand hebben we nieuwe speciaal ontworpen schoenen voor jou, deze casual schoen is gemaakt van:</p>
-                    <ul>
-                    <li>Zacht Premium Leer</li>
-                    <li>Rubberen loopzool</li>
-                    <li>Porselein</li>
-            </div>
-</div>
-<div class="sort">
-            <img src="Images/Schoenen/Schoen3(1).jpg">
-                <div class="shoeinfo">
-                    <p class="shoename">SPORTY</p>
-                    <p class="shoetext">  
-                    Deze maand hebben we nieuwe speciaal ontworpen schoenen voor jou, deze sporty schoen is gemaakt van:</p>
-                    <ul>
-                    <li>Textiel</li>
-                    <li>Comfortabele Antislip zool</li>
-                    <li>Energie teruggevende boost</li>
-            </div>
-</div>
+    <div class="sort">
+                <img src="Images/Schoenen/Schoen1(1).png">
+                    <div class="shoeinfo">
+                        <p class="shoename">SPORTY</p>
+                        <p class="shoetext">  
+                        Deze maand hebben we nieuwe speciaal ontworpen schoenen voor jou, deze sporty schoen is gemaakt van:</p>
+                        <ul>
+                        <li>Textiel</li>
+                        <li>Comfortabele rubberen loopzool</li>
+                        <li>Energie teruggevende boost</li>
+                    </div>
+    </div>
+    <div class="sort">
+                <img src="Images/Schoenen/Schoen2(1).jpg">
+                    <div class="shoeinfo">
+                        <p class="shoename">CASUAL</p>
+                        <p class="shoetext">  
+                        Deze maand hebben we nieuwe speciaal ontworpen schoenen voor jou, deze casual schoen is gemaakt van:</p>
+                        <ul>
+                        <li>Zacht Premium Leer</li>
+                        <li>Rubberen loopzool</li>
+                        <li>Porselein</li>
+                </div>
+    </div>
+    <div class="sort">
+                <img src="Images/Schoenen/Schoen3(1).jpg">
+                    <div class="shoeinfo">
+                        <p class="shoename">SPORTY</p>
+                        <p class="shoetext">  
+                        Deze maand hebben we nieuwe speciaal ontworpen schoenen voor jou, deze sporty schoen is gemaakt van:</p>
+                        <ul>
+                        <li>Textiel</li>
+                        <li>Comfortabele Antislip zool</li>
+                        <li>Energie teruggevende boost</li>
+                </div>
+    </div>
 </div>
 </div>
 <div class="all-offers">
