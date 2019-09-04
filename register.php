@@ -43,6 +43,7 @@ if(isset($_POST["submit"])){
     VALUES ('".$username."','".$first_name."','".$last_name."','".$email."', MD5('".$password."'),'".$adress."')";
     
     if ($con->query($sql) === TRUE) {
+    include mail.php;
     echo "<script type= 'text/javascript'>alert('New record created successfully');</script>";
     header("Location: login.php");
 die();
