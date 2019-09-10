@@ -59,7 +59,7 @@ include ('navigation.php');
                     </div>
     </div>
     <div class="sort">
-                <img src="Images/Schoenen/Schoen2(1).jpg">
+                <img src="Images/Schoenen/Schoen2(1).jpeg">
                     <div class="shoeinfo">
                         <p class="shoename">CASUAL</p>
                         <p class="shoetext">  
@@ -71,7 +71,7 @@ include ('navigation.php');
                 </div>
     </div>
     <div class="sort">
-                <img src="Images/Schoenen/Schoen3(1).jpg">
+                <img src="Images/Schoenen/Schoen3(1).jpeg">
                     <div class="shoeinfo">
                         <p class="shoename">SPORTY</p>
                         <p class="shoetext">  

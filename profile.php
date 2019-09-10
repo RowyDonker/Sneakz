@@ -30,14 +30,18 @@ if($result = $con->query($query))
         echo "<br /><b>Soort Gebruiker:</b> ".$row['user_type'];
         ?>
         <div>
-            <td><a class='profilebuttons' href="deleteprofile.php?id=<?php echo $row["id"]; ?> ">Delete</a></td>
+            <td><a class='profilebuttons' href="edit.php?id=<?php echo $row["id"]; ?> ">Verander gegevens</a></td>
+            <td><a class='profilebuttons' href="deleteprofile.php?id=<?php echo $row["id"]; ?> ">Verwijder Account</a></td>
+            <td><a href='logout.php' class='profilebuttons'>Logout</a></td>
         <?php
-        echo "<br><a href='logout.php' class='profilebuttons'>Logout</a>";
         if($result = $con->query($query))
 {
     while($row = $result->fetch_assoc())
     {
             if ($row['user_type']== 'admin'){
+                echo "<br><a href='admin.php' class='profilebuttons'>Go to admin page!</a>";
+            }
+            if ($row['user_type']== 'head_admin'){
                 echo "<br><a href='admin.php' class='profilebuttons'>Go to admin page!</a>";
             }
     }

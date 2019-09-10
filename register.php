@@ -38,23 +38,69 @@ if(isset($_POST["submit"])){
     $email = $_POST["email"];
     $password = $_POST["password"];
     $adress = $_POST["adress"];
+    
+$check="SELECT * FROM users WHERE email = '$_POST[email]'";
+$check2="SELECT * FROM users WHERE username = '$_POST[username]'";
+$rs = mysqli_query($con,$check);
+$data = mysqli_fetch_array($rs, MYSQLI_NUM);
+$rs2 = mysqli_query($con,$check2);
+$data2 = mysqli_fetch_array($rs2, MYSQLI_NUM);
+if($data[0] > 1) {
+    echo '<script type="text/javascript">alert("De email die u heeft ingevuld is al in gebruik");</script>';
+}
+if($data2[0] > 1) {
+    echo '<script type="text/javascript">alert("De username die u heeft ingevuld is al in gebruik");</script>';
+}
+else
+{
 
     $sql = "INSERT INTO users (username, fst_name, lst_name, email, password, adress)
     VALUES ('".$username."','".$first_name."','".$last_name."','".$email."', MD5('".$password."'),'".$adress."')";
     
     if ($con->query($sql) === TRUE) {
-    include mail.php;
+        $to = $email;
+        $subject = "HTML email";
+        
+        $message = "
+        <html>
+        <head>
+        <title>HTML email</title>
+        </head>
+        <body>
+        <p>This email contains HTML Tags!</p>
+        <table>
+        <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        </tr>
+        <tr>
+        <td>$first_name</td>
+        <td>$last_name </td>
+        </tr>
+        </table>
+        </body>
+        </html>
+        ";
+        
+        // Always set content-type when sending HTML email
+        $headers = "MIME-Version: 1.0" . "\r\n";
+        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        
+        // More headers
+        $headers .= 'From: <Register@Sneakz.com>' . "\r\n";
+        $headers .= 'Cc: myboss@example.com' . "\r\n";
+        
+        mail($to,$subject,$message,$headers);
     echo "<script type= 'text/javascript'>alert('New record created successfully');</script>";
     header("Location: login.php");
 die();
     } else {
     echo "<script type= 'text/javascript'>alert('Error: " . $sql . "<br>" . $con->error."');</script>";
     }
-    
+}
+}
     $con->close();
-    }
 ?>
-
 <?php
 include ('footer.php');
 ?>
