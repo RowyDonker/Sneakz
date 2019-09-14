@@ -18,7 +18,7 @@ include ('navigation.php');
                     <p class="productname">Sneak Proefabonnement</p>
                     <p class="productprice">1 malig een paar schoenen € 120,-</p>
                     <p class="producttext">Ontvang eenmalig een paar geweldige Sneak sneakers op jou deurmat! Op deze manier kan je zien of sneak genoeg keuze en aanbod heeft. Klik voor meer informatie hieronder op 'Ga voor Sneak Proefabonnement'.</p>
-                    <p class="productbutton"><a>Ga voor proefabonnement</a></p> 
+                    <p class="productbutton"><a href="cart.php">Ga voor proefabonnement</a></p> 
                 </div>
 
             </div>
@@ -59,7 +59,7 @@ include ('navigation.php');
                     </div>
     </div>
     <div class="sort">
-                <img src="Images/Schoenen/Schoen2(1).jpeg">
+                <img src="Images/Schoenen/Schoen2(1).png">
                     <div class="shoeinfo">
                         <p class="shoename">CASUAL</p>
                         <p class="shoetext">  
@@ -71,7 +71,7 @@ include ('navigation.php');
                 </div>
     </div>
     <div class="sort">
-                <img src="Images/Schoenen/Schoen3(1).jpeg">
+                <img src="Images/Schoenen/Schoen3(1).png">
                     <div class="shoeinfo">
                         <p class="shoename">SPORTY</p>
                         <p class="shoetext">  

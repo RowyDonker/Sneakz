@@ -29,6 +29,7 @@ if($result = $con->query($query))
         echo "<br /><b>Email:</b> ".$row['email'];
         echo "<br /><b>Soort Gebruiker:</b> ".$row['user_type'];
         ?>
+
         <div>
             <td><a class='profilebuttons' href="edit.php?edit_id=<?php echo $row['id']; ?>" alt="edit">Verander gegevens</a></td>
             <?php
@@ -48,9 +49,18 @@ if($result = $con->query($query))
             <td><a class='profilebuttons' href="deleteprofile.php?id=<?php echo $row["id"]; ?> ">Verwijder Account</a></td>
             <td><a href='logout.php' class='profilebuttons'>Logout</a></td>
 </div>
+
 <?php
-        echo "</div>";
+    echo "<div class='profile2'>";
+    echo  "<h3>Uw abbonementen:</h3>";
+    echo "<hr>";
+    echo  "<h4>Sneakz Proefabbonement</h4>";
+    echo  "</div>";
+
+    echo "</div>";
     }
+
+
     $result->free();
 }
 else

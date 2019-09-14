@@ -42,6 +42,7 @@ if ($row['user_type']=='head_admin'){
     <th>Voornaam</th>
     <th>Achternaam</th>
     <th>Soort Gebruiker</th>
+    <th>Verander Functie?</th>
     <th>Verwijder account?</th>
     </tr>";
     while($row = mysqli_fetch_array($result))
@@ -54,6 +55,7 @@ if ($row['user_type']=='head_admin'){
     echo "<td>" . $row['user_type'] . "</td>";
 
     ?>
+    <td><a href="admin_edit.php?edit_id=<?php echo $row['id']; ?>" alt="edit">Edit</a></td>
     <td><a href="delete.php?id=<?php echo $row["id"];?>">Verwijderen</a></td>
     <?php
     echo "</tr>";

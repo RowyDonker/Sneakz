@@ -549,7 +549,14 @@ text-shadow: 2px 2px 8px #000000;
             cursor: pointer;
             font-family: 'RalewayBold';
         }
-
+        .productbutton a{
+            text-decoration: none;
+            color: white;
+        }
+        .productbutton a:link{
+            text-decoration: none;
+            color: white;
+        }
         /* Deze maand */
         .thismonthtitle{
             width: 100%;
@@ -802,19 +809,6 @@ text-shadow: 2px 2px 8px #000000;
         .register-button:hover{
             cursor: pointer;
         }
-        .userexists{
-            color: white;
-            position: absolute;
-            top: 50%;
-            width: 100%;
-            text-align: center;
-            font-size: 50px;
-        }
-        .userexists p{  
-            background-color: #7A99B7;
-            margin: auto auto;
-            width:30%;
-        }
         /* LOGIN */
         .login-form{
             background-color: #33404D;
@@ -865,6 +859,7 @@ text-shadow: 2px 2px 8px #000000;
             box-shadow: 2px 2px #be3d52;
             font-family: 'RalewayBold';
             font-size: 20px;
+            cursor: pointer;
         }
         @media screen and (max-width: 800px) {
             .login-button{
@@ -904,6 +899,8 @@ text-shadow: 2px 2px 8px #000000;
             color: white;
             font-size: 30px;
         }
+
+
         @media screen and (max-width:1100px){
             .profile{
                 width:80%;
@@ -937,6 +934,20 @@ text-shadow: 2px 2px 8px #000000;
         }
         .profilebuttons a{
             float: left;
+        }
+
+
+        .profile2{
+            width: 100%;
+            height: auto;
+            background: #33404D;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: white;
+            font-size: 30px;
+        }
+        .profile2 div{
+            width: 100%;
         }
 
         /* ADMIN */
@@ -975,4 +986,62 @@ text-shadow: 2px 2px 8px #000000;
         }
         .admin-table tr td{
             border: none;
+        }
+        /* EDIT */
+        .update-form{
+            background-color: #33404D;
+            width: 50%;
+            margin: auto auto;
+            padding: 20px;
+            margin-top:100px;
+            margin-bottom:100px;
+        }
+        .update-form p{
+            color: white;
+            padding-top: 10px;
+            padding-bottom:10px;
+            margin: 0px;
+            padding-left: 20px;
+            font-family: RalewayBold;
+        }
+        .update-form label{
+            font-size: 25px;
+            color: white;
+            width: 50%;
+            padding-left: 20px;
+        }
+        .update-input{
+            width:75%;
+            padding: 10px;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        .update-button{
+            padding: 8px;
+            padding-right: 60px;
+            padding-left: 60px;
+            margin-left: 20px;
+            background-color: #EB5C74;
+            width: 40%;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            border: none;
+            box-shadow: 2px 2px #be3d52;
+            font-family: 'RalewayBold';
+            font-size: 20px;
+            cursor: pointer;
+        }
+        /* Shopping Cart */
+
+        .shopping-cart{
+            background-color: #33404D;
+            width: 50%;
+            margin: auto auto;
+            margin-top:100px;
+            margin-bottom:100px;
+        }
+        .shopping-cart h1{
+            color: white;
+            padding:10px;
         }

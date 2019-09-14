@@ -64,35 +64,56 @@ else
         $message = "
         <html>
         <head>
-        <title>HTML email</title>
+        <title>Welkom bij Sneakz</title>
         </head>
         <body>
-        <p>This email contains HTML Tags!</p>
+        <h1>Bedankt voor uw registratie!</h1><br>
+        <p>Bedankt voor uw registratie!</p><br>
+        <p>Dit zijn uw opgegeven gegevens.</p>
         <table>
         <tr>
-        <th>Firstname</th>
-        <th>Lastname</th>
+        <th>Gebruikersnaam</th>
+        
+        <th>Achternaam</th>
+        <th>Adres</th>
+        </tr>
+        <tr>
+        <td>$username</td>
+        </tr>
+        <tr>
+        <th>Voornaam</th>
         </tr>
         <tr>
         <td>$first_name</td>
-        <td>$last_name </td>
+        </tr>
+        <tr>
+        <th>Achternaam</th>
+        </tr>
+        <tr>
+        <td>$last_name</td>
+        </tr>
+        <tr>
+        <th>Adres</th>
+        </tr>
+        <tr>
+        <td>$adress</td>
         </tr>
         </table>
+        <p>Als deze ingevulde gegevens niet kloppen kunt u deze veranderen via de profiel pagina.</p><br>
+        <p>https://rowydonker.com/Sneakz/profile.php</p><br>
         </body>
         </html>
         ";
         
-        // Always set content-type when sending HTML email
+
         $headers = "MIME-Version: 1.0" . "\r\n";
         $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
         
-        // More headers
         $headers .= 'From: <Register@Sneakz.com>' . "\r\n";
-        $headers .= 'Cc: myboss@example.com' . "\r\n";
         
         mail($to,$subject,$message,$headers);
+        header("Location: login.php");
     echo "<script type= 'text/javascript'>alert('New record created successfully');</script>";
-    header("Location: login.php");
 die();
     } else {
     echo "<script type= 'text/javascript'>alert('Error: " . $sql . "<br>" . $con->error."');</script>";
