@@ -888,6 +888,25 @@ text-shadow: 2px 2px 8px #000000;
            color: #337ab7;
 
         }
+        .passwordforgotbutton{
+            padding: 5px;
+            padding-right: 0px;
+            cursor: pointer;
+            display: inline-block;
+            border: none;
+            background-color: unset;
+            margin-left: 20px;
+            color: white;
+        }
+        .passwordforgotbutton a{
+            font-size: 15px;
+            text-decoration: none;
+            color: white;
+        }
+        .passwordforgotbutton a:hover{
+           color: #337ab7;
+
+        }
         /* PROFILE */
         .profile{
             width: 50%;
