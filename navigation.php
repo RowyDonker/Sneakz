@@ -23,9 +23,13 @@ include ('head.php');
 <div class="mobile-navigation">
 <a href="index.php" class="nodecorationbutton"><li>HOME</li></a>
 <a href="product.php" class="nodecorationbutton"><li>BESTELLEN</li></a>
-<a href="login.php" class="nodecorationbutton"><li>LOGIN/REGISTREREN</li></a>
-<div class="icons">
+<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {?>
+    <div class="icons">
         <a href="login.php" class="nodecorationbutton"> <img src="Images/profile.png" class="navbar-icons"></a>
         <img src="Images/cart.png" class="navbar-icons">
 </div>
+            <?php }else{ ?>
+            <a href="login.php" class="nodecorationbutton"><li>LOGIN/REGISTREREN</li></a>
+            <?php }?>
+
 </div>
