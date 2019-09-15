@@ -8,9 +8,8 @@ include ('navigation.php');
                 <hr>
                     <p class="productname">Sneak Proefabonnement X1 - €120</p>
                 <hr>
-                <p class="productname">Prijs: €120</p>
-                
-
+                <p class="productname">Prijs: €120</p>        
+<br>
     <p class="productbutton"><a  href="profile_sub.php" style="text-decoration:none">Betalen</a></p> 
 </div>
 </div>

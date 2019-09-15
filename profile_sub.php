@@ -37,17 +37,19 @@ if($result = $con->query($query))
 {
     while($row = $result->fetch_assoc())
     {
-            if ($row['user_type']== 'admin'){
-                echo " <td><a href='admin.php' class='profilebuttons'>Go to admin page!</a></td>";
-            }
-            if ($row['user_type']== 'head_admin'){
-                echo " <td><a href='admin.php' class='profilebuttons'>Go to admin page!</a></td>";
-            }
-    }
+        if ($row['user_type']== 'admin'){
+            echo " <td><a href='admin.php' class='profilebuttons'>Go to admin page!</a></td>";
+        }
+        if ($row['user_type']== 'head_admin'){
+            echo " <td><a href='admin.php' class='profilebuttons'>Go to admin page!</a></td>";
+        }
+?>
+        <td><a class='profilebuttons' href="deleteprofile.php?id=<?php echo $row["id"];?>">Verwijder Account</a></td>
+        <td><a href='logout.php' class='profilebuttons'>Logout</a></td>
+<?php
+}
 }
 ?>
-            <td><a class='profilebuttons' href="deleteprofile.php?id=<?php echo $row["id"]; ?> ">Verwijder Account</a></td>
-            <td><a href='logout.php' class='profilebuttons'>Logout</a></td>
 </div>
 
 <?php

@@ -37,7 +37,7 @@ if ($row['user_type']=='head_admin'){
    
     echo "<table border='1' class='admin-table'>
     <tr>
-    <th>Username</th>
+    <th>Gebruikersnaam</th>
     <th>Email</th>
     <th>Voornaam</th>
     <th>Achternaam</th>
