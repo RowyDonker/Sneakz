@@ -36,9 +36,9 @@ echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here 
 <form action="" method="post" class="login-form">
 <p class="logintitle">Login</p>
 <label>Gebruikersnaam:</label><br>
-<input type="text" name="username" id="username" required="required" placeholder="Please Enter Username" class="login-input"/><br /><br />
+<input type="text" name="username" id="username" required="required" placeholder="Gebruikersnaam:" class="login-input"/><br /><br />
 <label>Wachtwoord:</label><br>
-<input type="password" name="password" id="password" required="required" placeholder="Password" class="login-input"/><br/><br />
+<input type="password" name="password" id="password" required="required" placeholder="Wachtwoord:" class="login-input"/><br/><br />
 <input type='submit' name='submit' value='Login' class="login-button" /><br>
 <button class="registerlinkbutton"><a href="register.php" >Meld je hier aan!</a></button>
 </form>

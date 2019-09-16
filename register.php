@@ -12,17 +12,17 @@ include ('navigation.php');
 <button class="loginlinkbutton"><a href="login.php" >Terug naar login</a></button>
 <p class="registertitle">Aanmelden</p>
 <label>Gebruikersnaam :</label><br>
-<input type="text" name="username" id="username" class="register-input" required="required" placeholder="Please Enter Username"/><br /><br />
+<input type="text" name="username" id="username" class="register-input" required="required" placeholder="Vul een gebruikersnaam in:"/><br /><br />
 <label>Voornaam :</label><br>
-<input type="text" name="first_name" id="firstname" class="register-input" required="required" placeholder="Please Enter First Name"/><br /><br />
+<input type="text" name="first_name" id="firstname" class="register-input" required="required" placeholder="Vul uw voornaam in:"/><br /><br />
 <label>Achternaam :</label><br>
-<input type="text" name="last_name" id="lastname" class="register-input" required="required" placeholder="Please Enter Last Name"/><br /><br />
+<input type="text" name="last_name" id="lastname" class="register-input" required="required" placeholder="Vul uw achternaam in:"/><br /><br />
 <label>Email :</label><br>
-<input type="email" name="email" id="email" class="register-input" required="required" placeholder="john123@gmail.com"/><br/><br />
+<input type="email" name="email" id="email" class="register-input" required="required" placeholder="Vul uw email in:"/><br/><br />
 <label>Wachtwoord :</label><br>
-<input type="password" name="password" id="password" class="register-input" required="required" placeholder="Password"/><br/><br />
+<input type="password" name="password" id="password" class="register-input" required="required" placeholder="Vul een wachtwoord in:"/><br/><br />
 <label>Adres :</label><br>
-<input type="text" name="adress" id="city" class="register-input" required="required" placeholder="Please Enter Your adress"/><br/><br />
+<input type="text" name="adress" id="city" class="register-input" required="required" placeholder="Vul uw adres in:"/><br/><br />
 <input type="submit" value="Aanmelden" name="submit" class="register-button"/><br />
 </form>
 

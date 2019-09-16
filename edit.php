@@ -30,6 +30,7 @@ if(isset($_POST['update-button'])){
 <html>
 <body>
 <form method="post" class="update-form">
+<p class="profilelinkbutton"><a href='profile.php'>Go back to profile </a></p>
 <p style="font-size:40px">Update</p>
 <p style="font-size:20px">Update hier uw gegevens:</p>
 <label>Voornaam:</label><br>
