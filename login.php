@@ -13,7 +13,6 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     header("Location: profile.php");
 } 
 require('db.php');
-session_start();
 if (isset($_POST['username'])){
     
 $username = stripslashes($_REQUEST['username']);
@@ -28,7 +27,7 @@ $_SESSION['loggedin'] = true;
 $_SESSION['username'] = $username;
 header("Location: profile.php");
 }else{
-echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
+echo "<div class='form'><h3>Gebruikersnaam/Wachtwoord is incorrect.</h3><br/>Klik hier om terug te gaan naar de <a href='login.php'>Login</a></div>";
 }
 }else{
 ?>

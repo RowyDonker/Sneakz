@@ -30,8 +30,7 @@ include ('navigation.php');
 session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
     header("Location: profile.php");
-} 
-if(isset($_POST["submit"])){
+}else if(isset($_POST["submit"])){
     include 'db.php';
     $username = $_POST["username"];
     $first_name = $_POST["first_name"];

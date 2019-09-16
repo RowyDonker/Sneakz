@@ -43,7 +43,13 @@ if($result = $con->query($query))
                 echo " <td><a href='admin.php' class='adminbutton'>Go to admin page!</a></td>";
             }
     ?>
+            <?php 
+            if ($row['user_type']== 'head_admin'){
+               
+            }else{?>
             <td><a class='profilebuttons' href="deleteprofile.php?id=<?php echo $row["id"];?>">Verwijder Account</a></td>
+            <?php
+            }?>
             <td><a href='logout.php' class='profilebuttons'>Logout</a></td>
     <?php
     }

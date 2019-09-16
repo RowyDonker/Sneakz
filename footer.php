@@ -2,10 +2,18 @@
  <div class="footercontent">
      <div class="footermenu">
         <ul>
-            <li>HOME</li>
-            <li>BESTELLEN</li>
-            <li>INLOGGEN</li>
-            <li>REGISTREREN</li>
+        <a href="index.php" class="nodecorationbutton"><li>HOME</li></a>
+        <a href="product.php" class="nodecorationbutton"><li>BESTELLEN</li></a>
+        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {?>
+            
+            <?php }else{ ?>
+            <a href="login.php" class="nodecorationbutton"><li>LOGIN</li></a>
+            <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {?>
+            
+            <?php }else{ ?>
+            <a href="Registreren.php" class="nodecorationbutton"><li>REGISTREREN</li></a>
+            <?php }?>
+            <?php }?>
         </ul>
      </div>
 <div class="contacts">
