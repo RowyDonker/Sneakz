@@ -3,13 +3,13 @@ session_start();
 include 'db.php';
 include 'head.php';
 include 'navigation.php';
-//Get ID from Database
+
 if(isset($_GET['edit_id'])){
  $sql = "SELECT * FROM users WHERE id =" .$_GET['edit_id'];
  $result = mysqli_query($con, $sql);
  $row = mysqli_fetch_array($result);
 }
-//Update Information
+
 if(isset($_POST['update-button'])){
  $Firstname = $_POST['Firstname'];
  $Lastname = $_POST['Achternaam'];
@@ -25,7 +25,7 @@ if(isset($_POST['update-button'])){
  }
 }
 ?>
-<!--Create Edit form -->
+
 <!doctype html>
 <html>
 <body>
@@ -43,7 +43,7 @@ if(isset($_POST['update-button'])){
 <input type="text" name="Email" class="update-input" required="required" value="<?php echo $row['email']?>" placeholder="Email"/><br/><br/>
 <button type="submit" name="update-button" class="update-button"><strong>Update</strong></button>
 </form>
-<!-- Alert for Updating -->
+
 <?php
 include 'footer.php';
 ?>

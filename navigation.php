@@ -19,7 +19,7 @@ include ('head.php');
     </ul>
 </div>
 
-<!-- Mobile nav -->
+<!-- Navigatie Mobiele versie -->
 <div class="mobile-navigation">
 <a href="index.php" class="nodecorationbutton"><li>HOME</li></a>
 <a href="product.php" class="nodecorationbutton"><li>BESTELLEN</li></a>
